@@ -1,0 +1,9 @@
+<div preserve-order masonry class="ui-view-row container"
+	ng-if="imagesLoaded" id="landing-imgs"
+	masonry-options="{ columnWidth: container.querySelector('.grid-sizer')}">
+	<div class="grid-sizer"></div>
+	<div masonry-brick class="masonry-brick {{img.className}}"
+		ng-repeat="img in images">
+		<img ng-src="{{img.url}}" />
+	</div>
+</div>
