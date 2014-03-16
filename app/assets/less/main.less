@@ -1,0 +1,670 @@
+@import "bootstrap.less";
+@import "responsive.less";
+@import "font-awesome.less";
+@import "idm-variables.less";
+
+// Fix FontAwesome font path
+@fa-font-path:   "../fonts";
+
+// Customize some bootstrap!
+// @navbarBackground: #445868;
+//@navbarBackgroundHighlight: rgb(68, 88, 104);
+//@navbarBrandColor: rgb(225, 231, 236);
+//@navbarLinkColor: rgb(225,231,236);
+//@navbarLinkColorHover: rgb(255,231,236);
+//@navbarLinkColorActive: rgb(68, 88, 104);
+//@navbarLinkBackgroundActive: rgb(225, 231, 236);
+
+body,html {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	color: #2E2922;
+	background: url(../img/background_offwhite.jpg);
+}
+
+.css-form input.ng-invalid.ng-dirty {
+	background-color: #FA787E;
+}
+
+.css-form input.ng-valid.ng-dirty {
+	background-color: #78FA89;
+}
+
+.masonry-brick {	
+	width: 20%;;
+	float:left;	
+}
+.masonry-brick.w2 { width:  40%; }
+.masonry-brick.h2 {/* height: 510px; */}
+
+.grid-sizer { width: 20%; }
+
+.move-down{
+	margin-top:50px;
+	margin-left: 5px;
+}
+
+.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus
+	{
+	color: #ffffff;
+}
+#desktop-menubar {
+	font-size: 13px;
+	height: 175px;
+}
+#desktop-menubar .info-columns {
+	position: relative;
+	top: 13em;
+}
+#desktop-menubar #logo-row {
+	position: relative;
+	top: 10px;
+}
+.info-columns .hours {
+	position: absolute;
+	list-style: none;
+	bottom: 2px;
+	font-size: 12px;
+}
+/*************
+ * MAIN MENU *
+**************/
+#main-menu a.btn-reserve {
+	color: white;
+	position: relative;
+	bottom: 4px;
+}
+
+#main-menu ul.thin a.btn-reserve {
+	bottom: 24px;
+	left: 72px;
+}
+
+#main-menu {
+	width: 100%;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	position: relative;
+	bottom: 50px;
+	z-index: 2;
+	height: 36px;
+}
+
+#main-menu ul.text-right,#main-menu ul.text-left {
+	position: relative;
+	top: 7px;
+}
+
+#main-menu ul.thin {
+	position: relative;
+	top: 4px;
+}
+
+#main-menu a {
+	font-family: 'Libre Baskerville Bold700', serif;
+	font-weight: bold;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #A79B96;
+}
+
+#main-menu a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+#main-menu .row-fluid .span5 ul {
+	height: 1.5em;
+	padding-top: 11px;
+}
+
+#main-menu .row-fluid .span4 ul li.active a {
+	color: black;
+}
+
+#main-menu .row-fluid .span4 ul li.active a.btn-reserve {
+	color: white;
+}
+
+#menu-border {
+	width: 100%;
+	border-top: 1px solid black;
+	position: relative;
+	z-index: 2;
+	top: -1px;
+}
+
+#about-link {
+	position: relative;
+	bottom: 3px;
+}
+
+.thin #about-link {
+	position:relative;
+	bottom: 0;
+}
+
+#submenu {
+	background: url('../img/background_ios.png');
+	margin-top: 3px;
+	margin-bottom: -3px;
+	z-index: 2;
+	position: relative;
+	bottom: 5px;
+}
+
+#submenu .container {
+	padding: 40px 0 10px 0
+}
+
+#submenu ul {
+	width: 591px;
+	margin: 0px auto;
+	position: relative;
+}
+
+#submenu a {
+	color: #D2CDC6;
+	-webkit-transition: color .2s ease-out;
+	-moz-transition: color .2s ease-out;
+	-o-transition: color .2s ease-out;
+	transition: color .2s ease-out;
+}
+
+#submeun a.hover {
+	color: white;
+}
+
+#submenu li.active>a {
+	color: white;
+}
+
+.ui-view-row {
+	position: relative;
+	height: auto;
+	bottom: 1px;
+}
+
+#lunch-page {
+	margin-top: 32px;
+}
+
+#landing-imgs {
+	/*width: 1275px;*/
+	
+}
+
+.map {
+	width: 640px;
+	margin: 0px auto;
+}
+
+.callout {
+	font-family: 'Libre Baskerville Italic400', serif;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.team-name {
+	font-family: 'Libre Baskerville Bold700', serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.team-title {
+	font-family: 'Libre Baskerville Italic400', serif;
+	font-style: italic;
+	font-size: 15px;
+}
+
+.team-divider {
+	padding: 2px 0;
+}
+
+#about-page table td {
+	border: none;
+	padding: 0px 5px;
+}
+
+.middle-callout {
+	width: 350px;
+	margin: 0px auto;
+}
+
+.food-container {
+	z-index: 100;
+}
+
+.food-menu-title {
+	float: left;
+	width: 100%;
+	text-align: center;
+	font-family: 'Libre Baskerville';
+	font-weight: bold;
+	font-size: 22px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #A79B96;
+	text-shadow: 1px 1px #c2bab2;
+}
+
+.food-menu-title-ornament-container {
+	float: left;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 14px;
+}
+
+.food-menu-title-ornament {
+	margin: 0px auto;
+	width: 10px;
+	height: 5px;
+	background-color: #A79B96;
+	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.food-item-first-line {
+	width: 100%;
+}
+
+.food-menu-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.food-item-tbl {
+	text-transform: uppercase;
+	color: #2E2922;
+	font-family: 'Libre Baskerville', sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+	-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.food-item-tbl-desc {
+	font-family: 'Libre Baskerville Italic400', serif;
+	font-style: italic;
+	font-weight: normal;
+	-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: relative;
+	bottom: 11px;
+	text-transform: lowercase;
+}
+
+.food-item-title {
+	text-transform: uppercase;
+	float: left;
+	color: #2E2922;
+	font-size: 11px;
+	font-family: 'Libre Baskerville', serif;
+	font-weight: bold;
+	-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.food-menu-list li {
+	width: 100%;
+	float: left;
+	margin-bottom: 17px;
+}
+
+.food-item-line {
+	float: left;
+	border-bottom: 2px dotted #A79B96;
+	margin: 8px 0px 0px 10px;
+	display: inline-block;
+	width: 40%;
+}
+
+.middle-callout div.food-menu-title {
+	width: 94%;
+	margin-left: 10px;
+}
+
+.food-item-price {
+	float: right;
+	font-size: 15px;
+	margin-top: -5px;
+	padding-left: 10px;
+}
+
+.food-item-second-line {
+	width: 100%;
+	float: left;
+	font-family: 'Libre Baskerville Italic400', serif;
+	font-size: 13px;
+	-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.fmc-double-column {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.fmc-double-column.fmcdc-last,.food-menu-column-3-even.fmc3-last {
+	margin-right: 0;
+}
+
+.fmc-double-column {
+	float: left;
+	width: 48%;
+	margin-right: 4%;
+}
+
+.aside {
+	width: 310px;
+	height: 280px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	padding: 20px;
+}
+
+.aside-container {
+	width: 300px;
+	text-align: center;
+	margin: 0px auto;
+}
+
+.food-menu-container-border.aside {
+	margin: 0px auto 40px auto;
+	float: none;
+	overflow: hidden;
+}
+
+.aside .food-menu-container-image {
+	margin-top: 20px;
+}
+
+.aside-text {
+	margin-top: 20px;
+	width: 100%;
+	font-family: 'Libre Baskerville';
+	font-style: italic;
+	font-size: 15px;
+}
+
+.food-menu-container-border.aside {
+	background-size: 100% 100%;
+}
+
+.food-menu-container-border {
+	text-align: center;
+	background: url(../img/menu-border-image-large.png) no-repeat center top;
+	/* width: 100%; */
+	background-size: 99% 99%;
+}
+
+.food-menu-container.food-menu-container-border .food-menu-title {
+	margin-top: 15px;
+}
+
+.food-menu-container-border .food-item-title,.food-menu-container-border-large .food-item-title
+	{
+	margin-top: 3%;
+}
+
+.food-menu-container-border .food-item-price,.food-menu-container-border-large .food-item-price
+	{
+	margin-top: 5px;
+}
+
+.food-menu-container-border .food-item-title,.food-menu-container-border .food-item-price,.food-menu-container-border .food-item-second-line,.food-menu-container-border-large .food-item-title,.food-menu-container-border-large .food-item-price,.food-menu-container-border-large .food-item-second-line,.nosize-menu .food-item-title,.nosize-menu .food-item-price,.nosize-menu .food-item-second-line
+	{
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding: 0px 15px 0px 15px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.food-menu-container>table {
+	clear: both;
+}
+
+.login {
+	padding-top: 65px;
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#inline-reserve-template {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.pagefooter .thin-line {
+	width: 100%;
+	border-top: 1px solid black;
+}
+
+.pagefooter .thick-line {
+	width: 100%;
+	border-bottom: 2px solid black;
+	margin-top: 1px;
+}
+
+.pagefooter .social {
+	width: 216px;
+	/*height: 150px;*/
+	margin: 0px auto;
+	padding-top: 20px;
+	text-align: center;
+}
+
+.center-container {
+	width: 200px;
+	margin: 0px auto;
+}
+
+#center-logo {
+	position: relative;
+	z-index: 10;
+}
+
+#map-canvas {
+	min-height: 100px;
+}
+
+.clear {
+	clear: both;
+}
+
+#left-text {
+	
+}
+
+.info-columns {
+	position: relative;
+	top: 15em;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.login {
+	padding-top: 65px;
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.red {
+	color: red;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+address {
+	font-family: 'Libre Baskerville';
+	font-weight: bold;
+	font-size: 13px;
+}
+
+.parking a {
+	text-transform: lowercase;
+	color: #0088cc;
+}
+
+#reservation-page {
+	position: relative;
+	top: 50px;
+	margin-bottom: 60px;
+}
+
+.cocktailsPhotos {
+	position: relative;
+	bottom: 64px;
+	z-index: 2;
+}
+
+.resForm {
+	border: 1px solid rgba(0, 0, 0, 0.5);
+	border-radius: 10px 10px 10px 10px;
+	background: rgba(0, 0, 0, 0.33);
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px
+		rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset
+		0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px
+		rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px
+		rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset
+		0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px
+		rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px
+		rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset
+		0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px
+		rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), inset 0 1px
+		rgba(255, 255, 255, 0.3), inset 0 10px rgba(255, 255, 255, 0.2), inset
+		0 10px 20px rgba(255, 255, 255, 0.25), inset 0 -15px 30px
+		rgba(0, 0, 0, 0.3);
+}
+
+.resForm-desktop {
+	position: relative;
+	left: 12px;
+	top: 8px;
+	width: 100%;
+}
+
+.resForm legend {
+	border-bottom: none;
+}
+
+.item-weight {
+	color: green;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.tab-content {
+	background: white;
+	position: relative;
+	bottom: 20px;
+}
+
+.tab-pane {
+	margin-top: 20px;
+}
+
+@media ( max-width : 1148px) {
+	#desktop-menubar .info-columns {
+		top: 9em;
+	}
+}
+@media (max-width : 1000px) {
+	#desktop-menubar .info-columns {
+		top: 4em;
+	}	
+	#menu-border {
+		top: -21px;
+	}
+	#main-menu a.btn-reserve {
+		bottom: 24px;
+		left: 72px;
+	}
+	#submenu {
+		bottom: 25px;
+	}
+	body {
+		margin-top:42px;
+	}
+	#center-logo {
+		bottom: 50px;
+	}
+	#main-menu a.btn-reserve, #main-menu ul.thin a.btn-reserve  {
+		left: 0;
+		bottom: 1px;
+	}
+}
+@media (max-width: 716px){
+	body {
+		margin-top:0;
+	}
+	#center-logo {
+		bottom: 0;
+	}
+	#desktop-menubar .info-columns {
+		top: 0;
+	}
+	.text-right {
+		text-align: center;
+	}
+	.info-columns .hours {
+		position: relative;
+	}
+	#right-text {
+		text-align: center;
+	}
+	#main-menu {
+		bottom: 0;
+		height: 55px;
+	}
+	#main-menu a.btn-reserve {
+		bottom: 0;
+		left: 0;
+	}
+	#main-menu ul.thin a.btn-reserve {
+		bottom:0;
+		left:0;
+	}
+	#center-logo img {
+		width:50%;
+	}
+	#menu-border {
+		top:-2px;
+	}
+	#submenu {
+		bottom: 6px;
+	}
+}
