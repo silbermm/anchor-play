@@ -3,14 +3,14 @@ angular.module('anchorotr.location', [
     'ui.router.state',
     'titleService',
     'menuCollapseService',
-    'navCollapseService',
+    'navCollapseService'
 ]).config(['$stateProvider',function($stateProvider) {
     $stateProvider.state('location', {
         url: '/location',
         views: {
             "main": {
                 controller: "LocationCtrl",
-                templateUrl: 'location/location.tpl.html'
+                templateUrl: '../location/location.tpl.html'
             }
         }
     })

@@ -4,14 +4,14 @@ angular.module('anchorotr.about', [
     'titleService',
     'menuCollapseService',
     'navCollapseService',
-    'authService',
+    'authService'
 ]).config(['$stateProvider', function($stateProvider) {
     $stateProvider.state('about', {
         url: '/about',
         views: {
             "main": {
                 controller: "AboutCtrl",
-                templateUrl: 'about/about.tpl.html'
+                templateUrl: '../about/about.tpl.html'
             }
         }
     })

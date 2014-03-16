@@ -6,14 +6,14 @@ angular.module('anchorotr.menus', [
     'authService',
     'angular-growl',
     'ui.bootstrap',
-    'navCollapseService',
+    'navCollapseService'
 ]).config(['$stateProvider','$urlRouterProvider',function($stateProvider, $urlRouterProvider) {
     $stateProvider.state('menus', {
         url: '/menus/:id',
         views: {
             "main": {
                 controller: "MenuCtrl",
-                templateUrl: 'menus/menus.tpl.html'
+                templateUrl: '../menus/menus.tpl.html'
             }
         }
     })
@@ -118,7 +118,7 @@ angular.module('anchorotr.menus', [
         });
         modalInstance.result.then(function(menuItem) {
             $log.info(menuItem);
-            $http.delete("/menus/items/" + menuItem.id).success(function(data, status, headers, config) {
+            $http.delete("/menus/items/" + menuItem.id).success(function(data,status,headers,config) {
                 $log.info("removed item with id: " + data.removed);
                 switch (menuItem.catagory) {
                     case "LUNCH SPECIAL":

@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       html2js: {
         options: {
           rename : function (moduleName) {
-            return  moduleName.replace('app/assets/js/', '');
+            return  moduleName.replace('app/dev/js/', '');
           },
           htmlmin: { 
             collapseBooleanAttributes: true,
@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           }
         },
         main: {
-          src: ['app/assets/js/**/*.tpl.html'],
+          src: ['app/dev/js/**/*.tpl.html'],
           dest: 'public/javascripts/templates.js'
         },
       },
@@ -37,8 +37,8 @@ module.exports = function(grunt) {
               'bower_components/angulartics/dist/angulartics-google-analytics.min.js',
               'bower_components/angular-ui-bootstrap-bower/ui-bootstrap-tpls.js',
               'bower_components/angular-ui-router/release/angular-ui-router.js',
-              'app/assets/js/app.js',
-              'app/assets/js/**/*.js',
+              'app/dev/js/app.js',
+              'app/dev/js/**/*.js',
             ],
           },
         },
@@ -66,20 +66,20 @@ module.exports = function(grunt) {
         development : {
           options : {
             paths : [
-              "app/assets/less/",
+              "app/dev/less/",
               "bower_components/bootstrap/less/",
               "bower_components/font-awesome/less/"
             ]
           },
           files : {
-            "app/assets/css/main.css" : "app/assets/less/main.less"
+            "app/dev/css/main.css" : "app/dev/less/main.less"
           }
         },
       },
       copy : {
         main: {
               files: [
-                 {expand: true, src: ['bower_components/font-awesome/fonts/**'], dest: 'public/fonts/'},
+                 {expand: true, flatten: true, src: ['bower_components/font-awesome/fonts/**'], dest: 'public/fonts/'},
                 ]
         }
       },
@@ -87,7 +87,7 @@ module.exports = function(grunt) {
         dynamic: {
           files: [{
             expand: true,
-            cwd: 'app/assets/img/',
+            cwd: 'app/dev/img/',
             src: ['**/*.{png,jpg,gif,ico}'],
             dest: 'public/img/'
           }]
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
         combine: {
           files: {
             'public/stylesheets/main.css': [
-              'app/assets/css/main.css'
+              'app/dev/css/main.css'
             ],
           }
         }
@@ -105,10 +105,10 @@ module.exports = function(grunt) {
       watch : {
         scripts : {
           files : [ 
-            'app/assets/js/*.js',
-            'app/assets/js/**/*.js',
-            'app/assets/js/**/*.tpl.html',
-            'app/assets/less/*.less',
+            'app/dev/js/*.js',
+            'app/dev/js/**/*.js',
+            'app/dev/js/**/*.tpl.html',
+            'app/dev/less/*.less',
             'Gruntfile.js'
            ],
           tasks : [ 'default' ],

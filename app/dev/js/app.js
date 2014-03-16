@@ -11,12 +11,11 @@ angular.module('anchorotr', [
     "anchorotr.menus",
     "anchorotr.reservation",
     "angulartics",
-    "angulartics.google.analytics",
-	"wu.masonry"
+    "angulartics.google.analytics","wu.masonry"
 ]).config(['$locationProvider','growlProvider','$stateProvider', '$urlRouterProvider',function($locationProvider,growlProvider,$stateProvider, $urlRouterProvider) {
     $locationProvider.hashPrefix('!');
     growlProvider.globalTimeToLive(5000);
-    $urlRouterProvider.otherwise('/home');
+    //$urlRouterProvider.otherwise('/home');
 }]).run(['titleService','authService','$rootScope','$state','$stateParams', function(titleService, authService, $rootScope, $state, $stateParams) {
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;

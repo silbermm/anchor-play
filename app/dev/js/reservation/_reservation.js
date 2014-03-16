@@ -4,14 +4,13 @@ angular.module('anchorotr.reservation', [
     'titleService',
     'menuCollapseService',
     'ui.bootstrap',
-    'navCollapseService',
-]).config(['$stateProvider',function($stateProvider) {
+    'navCollapseService' ]).config(['$stateProvider',function($stateProvider) {
     $stateProvider.state('reservation', {
         url: '/reservation',
         views: {
             "main": {
                 controller: "ReservationCtrl",
-                templateUrl: 'reservation/reservation.tpl.html'
+                templateUrl: '../reservation/reservation.tpl.html'
             }
         }
     })
