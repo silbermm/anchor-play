@@ -75,7 +75,7 @@ public class InMemoryUserService extends BaseUserService {
         return identity;
     }
 
-    @Override
+    
     public void doLink(Identity current, Identity to) {
         User target = null;
 
