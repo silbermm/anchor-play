@@ -21,12 +21,7 @@ object AppBuild extends Build {
   // Turn off play's internal less compiler
   lessEntryPoints := Nil,
   // Turn off play's internal javascript compiler
-  javascriptEntryPoints := Nil,
-
-  javascriptEntryPoints <<= (sourceDirectory in Compile)(base =>
-    ((base / "assets" ** "*.js") --- (base / "assets" ** "_*")).get
-  )
-
+  javascriptEntryPoints := Nil, 
 
   // Where does the UI live?
   uiDirectory <<= (baseDirectory in Compile) { _ / ""},
