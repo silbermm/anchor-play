@@ -1,0 +1,19 @@
+{
+  "name": "theanchor-otr",
+  "version": "0.0.3",
+  "dependencies": {
+    "font-awesome": "~4.0.3",
+    "ichuan-bower-angular-ui-utils": "~0.0.4",
+    "angular-growl": "~0.4.0",
+    "jquery": "~2.0.3",
+    "angular-ui-router": "0.2.8-bowratic-tedium",
+    "bootstrap": "2.3.2",
+    "angular-ui-bootstrap-bower": "~0.7.0",
+    "angulartics": "~0.8.7",
+    "angular-masonry": "~0.7.0",
+    "angular-ui-router": "~0.2.7"
+  },
+  "ignore": [
+    "test"
+  ]
+}
