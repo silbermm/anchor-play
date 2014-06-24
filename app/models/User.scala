@@ -7,9 +7,10 @@ import play.api.db.slick.Config.driver.simple._
 import scala.slick.lifted.{Tag}
 import java.sql.Timestamp
 
+
 case class User(id: Option[Long] = None, firstName: Option[String] = None, lastName: Option[String] = None, userName: String, identityId: String)
 
-class Users(tag: Tag) extends Table[User](tag, "COMPUTER") {
+class Users(tag: Tag) extends Table[User](tag, "USER") {
 
   def id = column[Long]("id", O.PrimaryKey, O.AutoInc)
   def firstName = column[String]("firstName", O.Nullable)
